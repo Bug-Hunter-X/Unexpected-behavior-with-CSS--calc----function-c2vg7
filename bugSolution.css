@@ -1,0 +1,27 @@
+/* bugSolution.css */
+
+.container {
+  display: flex;
+  width: 300px; /* Example width */
+}
+
+.item {
+  width: calc(100% - 20px); /* Subtract from the space within flexbox */
+  padding: 10px;  /* Add padding correctly */
+  background-color: lightblue; 
+  box-sizing: border-box; /* Important for padding to not affect width calculation*/
+}
+
+/*Example demonstrating space operator issue*/
+.item2{
+  width:calc(100%-20px); /*Incorrect, missing space*/
+  background-color: lightcoral;
+  box-sizing: border-box;
+}
+
+/*Example demonstrating unit errors*/
+.item3{
+  width: calc(100% - 20); /* Incorrect unit missing for 20 */
+  background-color: lightgreen;
+  box-sizing: border-box;
+}
