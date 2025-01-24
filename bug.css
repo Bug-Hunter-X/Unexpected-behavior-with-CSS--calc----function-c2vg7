@@ -1,0 +1,1 @@
+The CSS property `calc()` is used incorrectly.  For example, using `width: calc(100% - 10px);` inside a flex container might not work as expected if the 10px isn't subtracted from the already available space.  Another issue could be incorrect unit usage or missing spaces between operators and values in `calc()` expressions. 
